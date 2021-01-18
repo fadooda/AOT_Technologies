@@ -114,7 +114,6 @@ let searchObj =
  * Note: use call back to prevent the server from executing the next line of codes until the database returns 
  */
 app.post('/queryData',cors(), (req,res)=>{
-    let user= {"body": req.body}
     let qry = req.body.query
     let msg= req.body.message
     
