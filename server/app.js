@@ -117,10 +117,6 @@ app.post('/queryData',cors(), (req,res)=>{
     let user= {"body": req.body}
     let qry = req.body.query
     let msg= req.body.message
-    console.log(':::body:::')
-    console.log(user)
-    console.log(qry)
-    console.log(msg)
     
     searchObj.palindromes = getPalindromes(qry, 
         msg);
